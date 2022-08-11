@@ -1,4 +1,7 @@
 <?php
+
+require('dbconnect.php'); 
+
 // タイムゾーンを設定
 date_default_timezone_set('Asia/Tokyo');
 
@@ -115,22 +118,22 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
     <button class="user" onclick="location.href='reserve.php'">予約</button>
     <div class="reservedisplay">
         <p>12:00~</p>
-        <p>利用者名：<br>担当：</p>
+        <p>利用者名：<br>支援者名：</p>
     </div>
 
     <div class="reservedisplay">
         <p>12:30~</p>
-        <p>利用者名：<br>担当：</p>
+        <p>利用者名：<br>支援者名：</p>
     </div>
 
     <div class="reservedisplay">
         <p>15:00~</p>
-        <p>利用者名：<br>担当：</p>
+        <p>利用者名：<br>支援者名：</p>
     </div>
 
     <div class="reservedisplay">
         <p>15:30~</h2>
-        <p>利用者名：<br>担当：</p>
+        <p>利用者名：<br>支援者名：</p>
     </div>
     
 
