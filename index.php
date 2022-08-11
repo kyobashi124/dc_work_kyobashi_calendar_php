@@ -86,79 +86,9 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
     <meta charset="utf-8">
     <title>PHPカレンダー</title> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
-    <style>
-        .container {
-        
-            font-family: 'Noto Sans JP', sans-serif;
-            margin-top: 18px;
-            width:70%;
-            float: left;
-        }
-        h3 {
-            margin-bottom: 30px;
-        }
-        th {
-            height: 30px;
-            text-align: center;
-            background-color: #FFCC66;
-            color: white;
-        }
-        td {
-            height: 100px;
-        }
-        .today {
-            background: #FFCC66;
-        }
-        .reservedisplay{
-            padding-left: 15px;
-            margin-top: 12px;
-            height: 120px;
-            background-color:#FFCC66;
-            width: 300px;
-            float: left;
-            margin-left: 35px;
-            padding-bottom: 100px;
-        
-        }
-        .reservedisplay,p{
-            font-size: 20px;
-        }
-        .user{
-            width: 200px;
-            height: 50px;
-            margin-top: 30px;
-            margin-bottom: 40px;
-            margin-left: 30px;
-            background-color: #FFCC66;
-            
-        }
-        p{
-            padding-top: 10px;
-            
-        }
-         .nx{
-            margin-left: 30px;
-            color:white;
-            font-weight: bold;
-            background: #FFCC66;
-            padding: 5px 15px;
-            border-radius: 6px;
-        }
-        .pr{
-           
-            color:white;
-            font-weight: bold;
-            background:#FFCC66;
-            padding: 5px 15px;
-            border-radius: 6px;
-        }
-         
-         
-       
-         
     
-    </style>
 </head>
 <body>
 
@@ -182,7 +112,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
             ?>
         </table>
     </div>
-    <button class="user">予約</button>
+    <button class="user" onclick="location.href='reserve.php'">予約</button>
     <div class="reservedisplay">
         <p>12:00~</p>
         <p>利用者名：<br>担当：</p>
