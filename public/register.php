@@ -1,31 +1,38 @@
 <?php
+// エラーを出力する
+ini_set('display_errors', "On");
 
-
+require_once '/Applications/MAMP/htdocs/dc_work_kyobashi_calendar_php/classes/UserLogic.php';
 
 // エラーメッセージ
-$error = []; 
+$err = []; 
 
 // バリデーション
 if(!$username = filter_input(INPUT_POST, 'username')){
-    $error[] = 'ユーザー名を入力してください。';
+    $err[] = 'ユーザー名を入力してください。';
 }
 
 if(!$email = filter_input(INPUT_POST, 'email')){
-    $error[] = 'メールアドレスを入力してください。';
+    $err[] = 'メールアドレスを入力してください。';
 }
 //正規表現
 $password = filter_input(INPUT_POST, 'password');
 if(!preg_match('/\A[a-z\d]{8,100}+\z/i',$password)){
-    $error[] = "パスワードは8文字以上で記入してください。";
+    $err[] = "パスワードは8文字以上で記入してください。";
 }
 
 $password_conf = filter_input(INPUT_POST, 'password_conf');
 if($password !== $password_conf){
-    $error[] = "確認用パスワードと異なります。" ;
+    $err[] = "確認用パスワードと異なります。" ;
 }
 
-if(count($error)===0){
+if(count($err)===0){
     // 登録処理
+    $hasCreated = UserLogic::createUser($_POST);
+
+    if(!$hasCreated) {
+        $err[] = '登録に失敗しました。';
+    }
 }
 
 
@@ -46,8 +53,8 @@ if(count($error)===0){
     <title>ユーザー登録完了画面</title>
 </head>
 <body>
-<?php if (count($error) > 0) : ?>
-        <?php foreach($error as $e) : ?>
+<?php if (count($err) > 0) : ?>
+        <?php foreach($err as $e) : ?>
             <p><?php echo $e ?></p>
         <?php endforeach ?>
     <?php else : ?>

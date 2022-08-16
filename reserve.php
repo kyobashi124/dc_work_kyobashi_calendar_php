@@ -1,7 +1,5 @@
 <?php
 
-require('dbconnect.php'); 
-
 if(isset($_POST['name'])) {
     $name=htmlspecialchars($_POST["name"], ENT_QUOTES);
     $time_number=htmlspecialchars($_POST["time_number"], ENT_QUOTES);

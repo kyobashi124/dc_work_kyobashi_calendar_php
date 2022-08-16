@@ -7,8 +7,7 @@
 // }
 
 
-require_once 'env.php';
-ini_set('display_errors', true);
+require_once '/Applications/MAMP/htdocs/dc_work_kyobashi_calendar_php/env.php';
 function connect(){
 
     $host = DB_HOST;
@@ -29,7 +28,4 @@ function connect(){
     }
         
 }
-
-echo connect();
-
 ?>

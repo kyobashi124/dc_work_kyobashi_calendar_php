@@ -1,7 +1,5 @@
 <?php
 
-require('dbconnect.php'); 
-
 // タイムゾーンを設定
 date_default_timezone_set('Asia/Tokyo');
 
@@ -89,7 +87,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
     <meta charset="utf-8">
     <title>PHPカレンダー</title> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
     
 </head>
