@@ -1,8 +1,9 @@
 <?php
 // エラーを出力する
 ini_set('display_errors', "On");
-
-require_once '/Applications/MAMP/htdocs/dc_work_kyobashi_calendar_php/classes/UserLogic.php';
+//後にパスの修正
+// require_once '/Applications/MAMP/htdocs/dc_work_kyobashi_calendar_php/classes/UserLogic.php'; //Mac用
+require_once 'C:\MAMP\htdocs\dc_work_kyobashi_calendar_php\classes\UserLogic.php'; //WIn用
 
 // エラーメッセージ
 $err = []; 

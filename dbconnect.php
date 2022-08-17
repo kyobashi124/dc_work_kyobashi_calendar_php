@@ -7,7 +7,8 @@
 // }
 
 
-require_once '/Applications/MAMP/htdocs/dc_work_kyobashi_calendar_php/env.php';
+// require_once '/Applications/MAMP/htdocs/dc_work_kyobashi_calendar_php/env.php'; //Mac用
+require_once 'C:\MAMP\htdocs\dc_work_kyobashi_calendar_php\env.php'; //Win用
 function connect(){
 
     $host = DB_HOST;
@@ -23,6 +24,7 @@ function connect(){
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
         ]);
         echo "成功です。";
+        return $pdo;
     } catch(PDOExeption $e){
         echo '失敗'.$e ->getMessage();
     }
