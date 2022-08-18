@@ -21,15 +21,21 @@ if(!$password = filter_input(INPUT_POST, 'password')){
 
 };
 
-
+// ログイン処理
 if(count($err) > 0){
     // エラーがあった場合は戻す。
     $_SESSION = $err;
     header('Location: login.php');
     return;
 }
-    // ログイン処理
-    echo 'ログインしました。';
+//ログインが成功した場合
+$result = UserLogic::login($email,$password);    
+//ログイン失敗時の処理
+if (!$result){
+    header('Location: login.php');
+    return;
+}
+echo 'ログイン成功です。'
 
 
 

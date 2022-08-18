@@ -21,6 +21,9 @@ session_destroy();
 </head>
 <body>
     <h2>ログイン画面</h2>
+        <?php if (isset($err['msg'])):?>
+            <p><?php echo $err['msg']; ?></p>
+        <?php endif; ?>
     <form action="top.php" method="POST">
         
         <p>
