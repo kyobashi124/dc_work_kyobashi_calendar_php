@@ -1,7 +1,7 @@
 <?php
 
-// require_once '/Applications/MAMP/htdocs/dc_work_kyobashi_calendar_php/dbconnect.php'; //Mac用
-require_once 'C:\MAMP\htdocs\dc_work_kyobashi_calendar_php\dbconnect.php'; //Win用
+require_once '/Applications/MAMP/htdocs/dc_work_kyobashi_calendar_php/dbconnect.php'; //Mac用
+//require_once 'C:\MAMP\htdocs\dc_work_kyobashi_calendar_php\dbconnect.php'; //Win用
 
 class UserLogic
 {
