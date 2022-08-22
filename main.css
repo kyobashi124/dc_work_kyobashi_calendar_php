@@ -1,0 +1,56 @@
+body{
+    max-width: 100%;
+}
+
+h1{
+    font-size: 25px;
+    display: flex;
+    float: left;
+    margin-top: 20px;
+    padding-left:25%;
+}
+.reserve .submit{
+    background-color: #FFFF77;
+    height: 40px;
+    width: 300px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 0%;
+    box-shadow: 0px 4px #FFFF22;
+    color: #111111;
+    margin-top: 20px;
+    margin-left:30% ;
+}
+.calendar{
+    width: 1px;
+    margin-left: 4%;
+}
+img{
+    width: auto;  
+    float: left;
+    margin-left: 2%;
+}
+.reservedisplay{
+    margin-top: 2%;
+    height: 20%;
+    background-color:#FFCC66;
+    width: 300px;
+    margin-left: 75%;
+    opacity: 0.5;
+}
+
+h2{
+    margin: 0px;
+}
+
+.login .submit{
+    background-color: #ddd;
+    height: 40px;
+    width: 300px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 0%;
+    box-shadow: 0px 4px #aaa;
+    color: #111111;
+    margin-top: 100px;
+}
