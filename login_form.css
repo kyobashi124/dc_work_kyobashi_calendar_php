@@ -1,0 +1,16 @@
+.background{
+    margin: auto;
+    background-color: #FFCC66;
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 5%;
+    opacity: 0.8;
+    padding: 2%;
+    text-align: center;
+}
+h2,p{
+    opacity: 0.8;
+}
+a{
+    color: #CC6600;
+}
